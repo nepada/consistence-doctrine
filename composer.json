@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": ">=7.4.0",
-        "consistence/consistence": "^2.0",
+        "consistence/consistence": "^2.0@dev",
         "doctrine/dbal": "^2.6@dev"
     },
     "require-dev": {
