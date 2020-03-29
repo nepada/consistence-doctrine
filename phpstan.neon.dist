@@ -13,3 +13,9 @@ parameters:
             - LogicException
             - Doctrine\DBAL\Types\ConversionException
             - Nette\InvalidStateException
+
+    ignoreErrors:
+        - '~Parameter \#1 \$value \(.*\|TEnum of Consistence\\Enum\\Enum\|null\) of method Nepada\\ConsistenceDoctrine\\(String|Integer|Float|Boolean)EnumType::convertToDatabaseValue\(\) should be contravariant with parameter \$value .* of method Doctrine\\DBAL\\Types\\.*Type::convertToDatabaseValue\(\)~'
+        -
+            message: "~Call to function is_subclass_of\\(\\) with class-string<T of Consistence\\\\Enum\\\\Enum> and 'Consistence\\\\\\\\Enum.*' will always evaluate to true.*~"
+            path: src/ConsistenceDoctrine/EnumType.php

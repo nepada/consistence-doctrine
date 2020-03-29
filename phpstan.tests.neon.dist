@@ -21,4 +21,9 @@ parameters:
         - tests/temp/*
 
     ignoreErrors:
+        # intended
+        - '~Parameter #1 \$value of method Nepada\\ConsistenceDoctrine\\.*EnumType<NepadaTests\\ConsistenceDoctrine\\Fixtures\\Enums\\.*Example>::convertToDatabaseValue\(\) expects .*, NepadaTests\\ConsistenceDoctrine\\Fixtures\\Enums\\Invalid given~'
+        - # false positive
+            message: '~Method NepadaTests\\ConsistenceDoctrine\\EnumTypeTestCase::registerType\(\) should return TType of Doctrine\\DBAL\\Types\\Type but returns Doctrine\\DBAL\\Types\\Type~'
+            path: tests/ConsistenceDoctrine/EnumTypeTestCase.php
 #        - '~Call to static method Tester\\Assert::(type|count|same|notSame)\(\) with .* and .* will always evaluate to true\.~'
