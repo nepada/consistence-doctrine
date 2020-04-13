@@ -50,9 +50,7 @@ In Nette with [nettrine/dbal](https://github.com/nettrine/dbal) integration, you
 dbal:
     connection:
         types:
-            FooEnum:
-                class: FooEnumType
-                commented: false
+            FooEnum: FooEnumType
 ```
 
 ### Use the type in entity
