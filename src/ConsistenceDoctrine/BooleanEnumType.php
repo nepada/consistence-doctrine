@@ -14,7 +14,9 @@ use Doctrine\DBAL\Types\BooleanType;
 abstract class BooleanEnumType extends BooleanType
 {
 
-    /** @var EnumType<TEnum>|null */
+    /**
+     * @var EnumType<TEnum>|null
+     */
     private ?EnumType $enumType = null;
 
     /**

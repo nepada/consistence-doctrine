@@ -14,7 +14,9 @@ use Doctrine\DBAL\Types\StringType;
 abstract class StringEnumType extends StringType
 {
 
-    /** @var EnumType<TEnum>|null */
+    /**
+     * @var EnumType<TEnum>|null
+     */
     private ?EnumType $enumType = null;
 
     /**

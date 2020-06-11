@@ -11,7 +11,9 @@ use Consistence\Enum\Enum;
 final class EnumType
 {
 
-    /** @phpstan-var class-string<TEnum> */
+    /**
+     * @phpstan-var class-string<TEnum>
+     */
     private string $type;
 
     /**

@@ -14,7 +14,9 @@ use Doctrine\DBAL\Types\IntegerType;
 abstract class IntegerEnumType extends IntegerType
 {
 
-    /** @var EnumType<TEnum>|null */
+    /**
+     * @var EnumType<TEnum>|null
+     */
     private ?EnumType $enumType = null;
 
     /**

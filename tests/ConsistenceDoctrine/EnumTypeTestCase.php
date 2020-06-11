@@ -12,7 +12,9 @@ use Tester\Assert;
 abstract class EnumTypeTestCase extends TestCase
 {
 
-    /** @var AbstractPlatform|MockInterface */
+    /**
+     * @var AbstractPlatform|MockInterface
+     */
     protected AbstractPlatform $platform;
 
     protected function setUp(): void

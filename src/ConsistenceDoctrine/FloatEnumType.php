@@ -14,7 +14,9 @@ use Doctrine\DBAL\Types\FloatType;
 abstract class FloatEnumType extends FloatType
 {
 
-    /** @var EnumType<TEnum>|null */
+    /**
+     * @var EnumType<TEnum>|null
+     */
     private ?EnumType $enumType = null;
 
     /**
