@@ -1,5 +1,5 @@
-Phone number Doctrine type
-===========================
+Consistence Enum Doctrine types
+===============================
 
 [![Build Status](https://travis-ci.org/nepada/consistence-doctrine.svg?branch=master)](https://travis-ci.org/nepada/consistence-doctrine)
 [![Coverage Status](https://coveralls.io/repos/github/nepada/consistence-doctrine/badge.svg?branch=master)](https://coveralls.io/github/nepada/consistence-doctrine?branch=master)
