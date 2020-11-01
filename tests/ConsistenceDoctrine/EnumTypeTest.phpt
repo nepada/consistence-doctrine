@@ -3,6 +3,7 @@ declare(strict_types = 1);
 
 namespace NepadaTests\ConsistenceDoctrine;
 
+use Consistence\Enum\Enum;
 use Nepada\ConsistenceDoctrine\EnumType;
 use Tester\Assert;
 
@@ -16,7 +17,7 @@ class EnumTypeTest extends EnumTypeTestCase
 {
 
     /**
-     * @phpstan-param class-string<\Consistence\Enum\Enum> $className
+     * @phpstan-param class-string<Enum> $className
      * @dataProvider getInvalidClassNames
      * @param string $className
      * @param string $exceptionMessage
