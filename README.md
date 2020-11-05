@@ -1,7 +1,7 @@
 Consistence Enum Doctrine types
 ===============================
 
-[![Build Status](https://travis-ci.org/nepada/consistence-doctrine.svg?branch=master)](https://travis-ci.org/nepada/consistence-doctrine)
+[![Build Status](https://github.com/nepada/consistence-doctrine/workflows/CI/badge.svg)](https://github.com/nepada/consistence-doctrine/actions?query=workflow%3ACI+branch%3Amaster)
 [![Coverage Status](https://coveralls.io/repos/github/nepada/consistence-doctrine/badge.svg?branch=master)](https://coveralls.io/github/nepada/consistence-doctrine?branch=master)
 [![Downloads this Month](https://img.shields.io/packagist/dm/nepada/consistence-doctrine.svg)](https://packagist.org/packages/nepada/consistence-doctrine)
 [![Latest stable](https://img.shields.io/packagist/v/nepada/consistence-doctrine.svg)](https://packagist.org/packages/nepada/consistence-doctrine)
