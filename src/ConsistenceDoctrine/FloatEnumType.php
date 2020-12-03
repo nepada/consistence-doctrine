@@ -9,7 +9,7 @@ use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Types\FloatType;
 
 /**
- * @phpstan-template TEnum of Enum
+ * @template TEnum of Enum
  */
 abstract class FloatEnumType extends FloatType
 {
@@ -20,8 +20,7 @@ abstract class FloatEnumType extends FloatType
     private ?EnumType $enumType = null;
 
     /**
-     * @phpstan-return class-string<TEnum>
-     * @return string
+     * @return class-string<TEnum>
      */
     abstract protected function getEnumClassName(): string;
 
@@ -31,8 +30,7 @@ abstract class FloatEnumType extends FloatType
     }
 
     /**
-     * @phpstan-param TEnum|float|null $value
-     * @param Enum|float|null $value
+     * @param TEnum|float|null $value
      * @param AbstractPlatform $platform
      * @return mixed
      */
@@ -47,10 +45,9 @@ abstract class FloatEnumType extends FloatType
     }
 
     /**
-     * @phpstan-return TEnum|null
      * @param mixed $value
      * @param AbstractPlatform $platform
-     * @return Enum|null
+     * @return TEnum|null
      */
     public function convertToPHPValue($value, AbstractPlatform $platform): ?Enum
     {

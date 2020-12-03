@@ -7,7 +7,7 @@ use Nepada\ConsistenceDoctrine\IntegerEnumType;
 use NepadaTests\ConsistenceDoctrine\Fixtures\Enums\NullExample;
 
 /**
- * @phpstan-extends IntegerEnumType<NullExample>
+ * @extends IntegerEnumType<NullExample>
  */
 class NullableIntegerExampleType extends IntegerEnumType
 {

@@ -7,7 +7,7 @@ use Nepada\ConsistenceDoctrine\StringEnumType;
 use NepadaTests\ConsistenceDoctrine\Fixtures\Enums\NullExample;
 
 /**
- * @phpstan-extends StringEnumType<NullExample>
+ * @extends StringEnumType<NullExample>
  */
 class NullableStringExampleType extends StringEnumType
 {

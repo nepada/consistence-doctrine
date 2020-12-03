@@ -7,7 +7,7 @@ use Nepada\ConsistenceDoctrine\BooleanEnumType;
 use NepadaTests\ConsistenceDoctrine\Fixtures\Enums\NullExample;
 
 /**
- * @phpstan-extends BooleanEnumType<NullExample>
+ * @extends BooleanEnumType<NullExample>
  */
 class NullableBooleanExampleType extends BooleanEnumType
 {

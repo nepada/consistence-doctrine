@@ -7,7 +7,7 @@ use Nepada\ConsistenceDoctrine\StringEnumType;
 use NepadaTests\ConsistenceDoctrine\Fixtures\Enums\StringExample;
 
 /**
- * @phpstan-extends StringEnumType<StringExample>
+ * @extends StringEnumType<StringExample>
  */
 class StringExampleType extends StringEnumType
 {

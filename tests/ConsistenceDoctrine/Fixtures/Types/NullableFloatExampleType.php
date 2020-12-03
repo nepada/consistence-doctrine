@@ -7,7 +7,7 @@ use Nepada\ConsistenceDoctrine\FloatEnumType;
 use NepadaTests\ConsistenceDoctrine\Fixtures\Enums\NullExample;
 
 /**
- * @phpstan-extends FloatEnumType<NullExample>
+ * @extends FloatEnumType<NullExample>
  */
 class NullableFloatExampleType extends FloatEnumType
 {

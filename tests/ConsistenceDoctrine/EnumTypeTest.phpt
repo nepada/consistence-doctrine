@@ -17,9 +17,8 @@ class EnumTypeTest extends EnumTypeTestCase
 {
 
     /**
-     * @phpstan-param class-string<Enum> $className
      * @dataProvider getInvalidClassNames
-     * @param string $className
+     * @param class-string<Enum> $className
      * @param string $exceptionMessage
      */
     public function testInvalidClassName(string $className, string $exceptionMessage): void

@@ -9,7 +9,7 @@ use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Types\StringType;
 
 /**
- * @phpstan-template TEnum of Enum
+ * @template TEnum of Enum
  */
 abstract class StringEnumType extends StringType
 {
@@ -20,8 +20,7 @@ abstract class StringEnumType extends StringType
     private ?EnumType $enumType = null;
 
     /**
-     * @phpstan-return class-string<TEnum>
-     * @return string
+     * @return class-string<TEnum>
      */
     abstract protected function getEnumClassName(): string;
 
@@ -31,8 +30,7 @@ abstract class StringEnumType extends StringType
     }
 
     /**
-     * @phpstan-param TEnum|string|null $value
-     * @param Enum|string|null $value
+     * @param TEnum|string|null $value
      * @param AbstractPlatform $platform
      * @return mixed
      */
@@ -47,10 +45,9 @@ abstract class StringEnumType extends StringType
     }
 
     /**
-     * @phpstan-return TEnum|null
      * @param mixed $value
      * @param AbstractPlatform $platform
-     * @return Enum|null
+     * @return TEnum|null
      */
     public function convertToPHPValue($value, AbstractPlatform $platform): ?Enum
     {

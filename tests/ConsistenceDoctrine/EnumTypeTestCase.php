@@ -25,12 +25,10 @@ abstract class EnumTypeTestCase extends TestCase
     }
 
     /**
-     * @phpstan-template TType of Type
-     * @phpstan-param class-string<TType> $typeClassName
-     * @phpstan-return TType
+     * @template TType of Type
      * @param string $name
-     * @param string $typeClassName
-     * @return Type
+     * @param class-string<TType> $typeClassName
+     * @return TType
      */
     protected function registerType(string $name, string $typeClassName): Type
     {

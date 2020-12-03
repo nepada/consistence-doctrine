@@ -7,7 +7,7 @@ use Nepada\ConsistenceDoctrine\IntegerEnumType;
 use NepadaTests\ConsistenceDoctrine\Fixtures\Enums\IntegerExample;
 
 /**
- * @phpstan-extends IntegerEnumType<IntegerExample>
+ * @extends IntegerEnumType<IntegerExample>
  */
 class IntegerExampleType extends IntegerEnumType
 {

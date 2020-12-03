@@ -6,19 +6,18 @@ namespace Nepada\ConsistenceDoctrine;
 use Consistence\Enum\Enum;
 
 /**
- * @phpstan-template TEnum of Enum
+ * @template TEnum of Enum
  */
 final class EnumType
 {
 
     /**
-     * @phpstan-var class-string<TEnum>
+     * @var class-string<TEnum>
      */
     private string $type;
 
     /**
-     * @phpstan-param class-string<TEnum> $type
-     * @param string $type
+     * @param class-string<TEnum> $type
      */
     private function __construct(string $type)
     {
@@ -26,11 +25,9 @@ final class EnumType
     }
 
     /**
-     * @phpstan-template T of Enum
-     * @phpstan-param class-string<T> $type
-     * @phpstan-return EnumType<T>
-     * @param string $type
-     * @return EnumType
+     * @template T of Enum
+     * @param class-string<T> $type
+     * @return EnumType<T>
      */
     public static function fromClassName(string $type): EnumType
     {
@@ -51,8 +48,7 @@ final class EnumType
     }
 
     /**
-     * @phpstan-param TEnum|string|int|float|bool|null $value
-     * @param Enum|string|int|float|bool|null $value
+     * @param TEnum|string|int|float|bool|null $value
      * @return string|int|float|bool|null
      */
     public function convertToDatabaseValue($value)
@@ -69,10 +65,8 @@ final class EnumType
     }
 
     /**
-     * @phpstan-param TEnum|string|int|float|bool|null $value
-     * @phpstan-return TEnum|null
-     * @param Enum|string|int|float|bool|null $value
-     * @return Enum|null
+     * @param TEnum|string|int|float|bool|null $value
+     * @return TEnum|null
      */
     public function convertToPHPValue($value): ?Enum
     {
