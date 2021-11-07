@@ -53,7 +53,7 @@ class BooleanEnumTypeTest extends EnumTypeTestCase
 
     /**
      * @dataProvider getDataForConvertToDatabaseValue
-     * @param mixed $value
+     * @param BooleanExample|bool|null $value
      * @param int|null $expected
      */
     public function testConvertToDatabaseValueSucceeds($value, ?int $expected): void

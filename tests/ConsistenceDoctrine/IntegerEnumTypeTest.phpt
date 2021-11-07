@@ -53,7 +53,7 @@ class IntegerEnumTypeTest extends EnumTypeTestCase
 
     /**
      * @dataProvider getDataForConvertToDatabaseValue
-     * @param mixed $value
+     * @param IntegerExample|int|null $value
      * @param int|null $expected
      */
     public function testConvertToDatabaseValueSucceeds($value, ?int $expected): void
@@ -94,7 +94,7 @@ class IntegerEnumTypeTest extends EnumTypeTestCase
 
     /**
      * @dataProvider getDataForConvertToPHPValue
-     * @param mixed $value
+     * @param IntegerExample|int|null $value
      * @param IntegerExample|null $expected
      */
     public function testConvertToPHPValueSucceeds($value, ?IntegerExample $expected): void

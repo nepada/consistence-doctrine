@@ -53,7 +53,7 @@ class FloatEnumTypeTest extends EnumTypeTestCase
 
     /**
      * @dataProvider getDataForConvertToDatabaseValue
-     * @param mixed $value
+     * @param FloatExample|float|null $value
      * @param float|null $expected
      */
     public function testConvertToDatabaseValueSucceeds($value, ?float $expected): void
