@@ -7,6 +7,12 @@ Consistence Enum Doctrine types
 [![Latest stable](https://img.shields.io/packagist/v/nepada/consistence-doctrine.svg)](https://packagist.org/packages/nepada/consistence-doctrine)
 
 
+Package abandoned
+-----------------
+
+**This package is considered obsolete and abandoned.** Since PHP 8.1 introduced native enum support, there is no need for user-land implementation of enums, neither their custom integration into Doctrine.
+
+
 Installation
 ------------
 
